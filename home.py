@@ -115,7 +115,7 @@ def main():
     st.markdown("<h1><span class='dual-color-title'>Integer Programming Solver</span></h1>", unsafe_allow_html=True)
 
    # Add rounded image
-    image_path = Image.open("E:\\sanjay\\Bpo\\Project\\web\\srixlogo1.png")
+    image_path = Image.open("srixlogo1.png")
     st.sidebar.image(image_path, width=150, caption="Srix", use_column_width=False, output_format="PNG", clamp=False)
     
     # Add text below the image
@@ -129,7 +129,7 @@ def main():
         st.title("Home")
         col1, col2 = st.columns([2, 4])
         with col1:
-            image = Image.open('E:\\sanjay\\Bpo\\Project\\web\\inventory_1.jpg')
+            image = Image.open('inventory_1.jpg')
             st.image(image, use_column_width=True)
         with col2:
             st.write("Integer programming is used in real life because it provides a powerful tool for solving optimization problems that involve discrete decision-making. Here are some reasons why integer programming is widely used in various real-world applications:")
@@ -144,7 +144,7 @@ def main():
         st.title("Formulation")
         col3, col4 = st.columns([4, 3])
         with col4:
-            image = Image.open('E:\\sanjay\\Bpo\\Project\\web\\transport.jpeg')
+            image = Image.open('transport.jpeg')
             st.image(image, use_column_width=True)
         with col3:
             st.write("Integer programming is a mathematical optimization technique used to solve optimization problems where the decision variables are required to take integer values. It is an extension of linear programming, which deals with continuous variables.")
