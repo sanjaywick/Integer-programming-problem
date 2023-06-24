@@ -24,11 +24,20 @@ def solve_integer_programming(obj_coefficients, num_vars, restricted_vars, const
 
     # Define the objective function
     objective = lpSum(obj_coefficients[i] * decision_vars[i] for i in range(len(decision_vars)))
-    if optimization_mode == "Maximize":
-        prob += objective
+    if any(val < 0 for val in obj_coefficients):
+        negative_value=0
     else:
-        prob += -objective
-
+        negative_value=1
+    if negative_value==0:
+        if optimization_mode == "Maximize":
+            prob += (objective)*-1
+        else:
+            prob += objective
+    else:
+        if optimization_mode.get() ==0:
+            prob += objective
+        else:
+            prob += -(objective)
     # Define the constraints
     for i in range(len(constraint_coeffs)):
         constraint_expr = lpSum(constraint_coeffs[i][j] * decision_vars[j] for j in range(len(decision_vars)))
