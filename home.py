@@ -34,7 +34,7 @@ def solve_integer_programming(obj_coefficients, num_vars, restricted_vars, const
         else:
             prob += objective
     else:
-        if optimization_mode=="Minimize":
+        if optimization_mode=="Maximize":
             prob += objective
         else:
             prob += -(objective)
