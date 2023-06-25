@@ -124,7 +124,7 @@ def main():
     st.markdown("<h1><span class='dual-color-title'>Integer Programming Solver</span></h1>", unsafe_allow_html=True)
 
    # Add rounded image
-    image_path = Image.open("srixlogo3.png")
+    image_path = Image.open("srixlogo1.png")
     st.sidebar.image(image_path, width=150, caption="Srix", use_column_width=False, output_format="PNG", clamp=False)
     
     # Add text below the image
